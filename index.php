@@ -5,7 +5,7 @@ include 'header.php';
     <!-- 네비게이션 없을 경우 헤더 -->
     <header>
         <div class="logo">
-            <a href="/" alt="홈으로 가기"><img src="public/img/top_logo.png" alt="GST 로고 이미지"></a>
+            <a href="./" alt="홈으로 가기"><img src="public/img/top_logo.png" alt="GST 로고 이미지"></a>
         </div>
     </header>
     <!-- //.네비게이션 없을 경우 헤더 -->
@@ -21,7 +21,7 @@ include 'header.php';
                 <li><a href="./find_id.php">아이디 찾기</a></li>
                 <li><a href="./result_find_id.php">아이디 찾기 완료</a></li>
                 <li><a href="./agreement.php">약관동의</a></li>
-                <li><a href="./user_info_view_auth.php.php">사용자 정보관리 인증</a></li>
+                <li><a href="./user_info_view_auth.php">사용자 정보관리 인증</a></li>
             </ul>
             <?php
                 //해당 컴포넌트 : sign_up.php(회원가입),user_info_view.php(사용자 정보관리 확인/수정),authentication.php(본인인증페이지),completed_sign_up.php(회원가입완료)
