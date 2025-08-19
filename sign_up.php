@@ -1,71 +1,36 @@
 <?php
-$layout = 'has-nav';
+$layout = 'common';
 include 'header.php';
 ?>
-
-    <!-- 메인 헤더 영역 -->
-    <header class="main_header">
+    <!-- 네비게이션 없을 경우 헤더 -->
+    <header>
         <div class="logo">
-            <img src="public/img/logo-white.png" alt="Robocare">
-        </div>
-        <nav class="navigation">
-            <ul>
-                <li class="menuitem active"><a href="#">사용자 관리</a></li>
-                <li class="menuitem"><a href="#">알림 관리</a></li>
-                <li class="menuitem"><a href="#">모니터링</a></li>
-                <li class="menuitem"><a href="#">커뮤니티</a></li>
-                <li class="menuitem"><a href="#">수집관리</a></li>
-                <li class="menuitem"><a href="#">업데이트 관리</a></li>
-                <li class="menuitem"><a href="#">기준정보 관리</a></li>
-                <li class="menuitem"><a href="#">시스템 관리</a></li>
-            </ul>
-        </nav>
-        <div class="side_widget">
-            <div class="profile">
-                <div class="photo">
-                    <img src="public/img/profile-default.png">
-                </div>
-                <div class="name">
-                    <strong>김정우</strong>님
-                </div>
-            </div>
+            <a href="/" alt="홈으로 가기"><img src="public/img/top_logo.png" alt="GST 로고 이미지"></a>
         </div>
     </header>
-
+    <!-- //.네비게이션 없을 경우 헤더 -->
     <!-- content : 콘텐츠 영역 -->
     <div class="content">
-        <!-- 좌측 사이드 네비게이션 -->
-        <section class="side_navi">
-            <div class="menu_top">
-                <h3 class="name">사용자 관리</h3>
-                <ul>
-                    <li class="sidenav_item active"><a href="#">지자체 담당자 등록</a></li>
-                    <li class="sidenav_item"><a href="#">로보케어 직원 등록</a></li>
-                    <li class="sidenav_item"><a href="#">로봇사용자 등록</a></li>
-                    <li class="sidenav_item"><a href="#">보호자 연결 등록</a></li>
-                </ul>
-            </div>
-            <div class="menu_middle">
-                <h3 class="name">관리구역 관리</h3>
-                <ul>
-                    <li class="sidenav_item"><a href="#">기관담당자 관리구역 설정</a></li>
-                    <li class="sidenav_item"><a href="#">관리 구역 현황</a></li>
-                </ul>
-            </div>
-        </section>
         <!-- content_inner -->
-        <section class="content_inner">
+        <div class="content_inner">
             <?php
-                // 01. jQgrid 테이블
-                // include 'components/content-table.php';
-                // include 'components/agreement.php';
+                //해당 컴포넌트 : sign_up.php(회원가입),user_info_view.php(사용자 정보관리 확인/수정),authentication.php(본인인증페이지),compeleted_sign_up.php(회원가입완료)
+                /////////////// find_id.php(아이디 찾기),result_find_id.php(아이디 찾기 완료), agreement.php(약관동의), user_info_view_auth.php(사용자 정보관리 인증)
                 include 'components/sign_up.php';
+                // include 'components/user_info_view.php';
+                //include 'components/authentication.php';
+                // include 'components/compeleted_sign_up.php';
+                // include 'components/find_id.php';
+                // include 'components/result_find_id.php';
+                // include 'components/agreement.php';
+                // include 'components/user_info_view_auth.php';                
             ?>
-        </section>
+        </div>
         <!-- //.content_inner -->
     </div>
     <!-- //.content -->
 
 <?php
+$fLayout = 'f_relative';
 include 'footer.php';
 ?>
