@@ -15,6 +15,8 @@ include 'header.php';
         <div class="content_inner">
             <ul>
                 <li><a href="./sign_up.php">회원가입</a></li>
+                <li><a href="./user_info_view.php">사용자 정보관리 확인/수정</a></li>
+                <li><a href="./authentication.php">본인인증페이지</a></li>
             </ul>
             <?php
                 //해당 컴포넌트 : sign_up.php(회원가입),user_info_view.php(사용자 정보관리 확인/수정),authentication.php(본인인증페이지),compeleted_sign_up.php(회원가입완료)
