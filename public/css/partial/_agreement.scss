@@ -1,0 +1,73 @@
+//본인인증
+.agree{
+  .button_group{
+    margin-top: 40px;
+  }
+  //content_box style
+  .content_box{
+    border-bottom: 0;
+    .sub_txt{
+      margin-top: 25px;
+    }
+    .cb_inner{
+      margin-top: 35px;
+      .txt{
+        font-size: $size2;
+        color: $text_color9;
+      }
+      .items{
+        & + .items{
+          margin-top: 10px;
+        }
+        .wide_box,.wide_box_bottom{
+          border: solid 1px #dddddd;
+        }
+        .wide_box{
+          height: 110px;
+          overflow-y: auto;
+          padding: 20px 25px;
+          & + .wide_box{
+            height: 40px;
+            overflow: hidden;
+            border-top: 0;
+            padding: 10px 25px;
+            .txt,label{
+              float: left;
+            }
+            label + .txt{
+              margin-left: 8px;
+            }
+          }
+        }
+        .cb_title{
+          font-size: $size4;
+          margin-bottom: 12px;
+          & + p{
+            font-size: $size2;
+            color: $text_color9;
+          }
+        }
+
+      }
+      //전체동의
+      .cg_wrap{
+        margin-top: 10px;
+        height: 40px;
+        background: #eeeeee;
+        text-align: center;
+        .check_group{
+          display: inline-block;
+          margin: 10px auto 0;
+          label{
+            & + .txt{
+              margin-left: 8px;
+            }
+          }
+          & *{
+            float: left;
+          }
+        }
+      }
+    }
+  }
+}

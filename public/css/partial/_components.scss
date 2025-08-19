@@ -1,0 +1,273 @@
+//content_box style
+.content_box{
+  border: 1px solid #cccccc;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  .title_group{
+    h1{
+      font-size: 30px;
+      color: $title_color;
+      line-height: 1;
+    }
+    p{
+      font-size: $size2;
+      color: $text_color9;
+    }
+  }
+  .sub_txt{
+    font-size: $size2;
+    color: $title_color;
+  }
+  .prec{
+    font-size: $size2;
+    color: $text_color9;
+  }
+  .cb_inner{
+    &.flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .items{
+        position: relative;
+        padding: 30px 30px 100px;
+        width: calc( 50% - 15px );
+        margin-left: 30px;
+        border: solid 1px #dddddd;
+        min-height: 330px;
+        text-align: center;
+        font-size: $size2;
+        .cb_title{
+          margin-top: 8px;
+          font-size: 20px;
+          color: $title_color;
+          & + p{
+            margin-top: 12px;
+          }
+        }
+        .button_group{// 하단 버튼 그룹 추가 시
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 30px;
+        }
+        p{
+          color: $text_color9;
+        }
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+// table style
+.table_a {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  td,th {
+    position: relative;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    padding: 14px 8px 13px;
+    font-size: $size2;
+    em {
+      position: absolute;
+      display: inline-block;
+      font-size: 8px;
+      left: 50%;
+      color: $prec_color;
+      @include ab_align_L_M;// 요소의 position이 absolute 일때 만 사용
+    }
+  }
+  th {
+    text-align: left;
+    padding-left: 20px;
+    &:nth-child(1){
+      width: 120px;
+    }
+    color: $title_color;
+  }
+  td {
+    color: $text_color;
+  }
+}
+
+//input style
+input{
+
+  //size type
+  &.tiny{ width: 100px }
+  &.small{ width: 150px }
+  &.middle{ width: 250px }
+  &.big{ width: 478px }
+
+  //input type checkbox
+  &[type='checkbox']{
+    display:none;
+    & + label{
+      position: relative;
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      border: solid 1px #999999;
+      background-color: #ffffff;
+    }
+    &:checked{
+      & + label{
+        &:after{
+          content:'';
+          position: absolute;
+          left: 50%;
+          top: 40%;
+          width: 0px;
+          height: 1.5px;
+          border: solid #000000;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 3px;
+          transform: translate( -50% , -50% ) rotate(45deg);
+          -webkit-transform: translate( -50% , -50% ) rotate(45deg) ;
+        }
+      }
+    }
+  }
+
+  //input type radiobox
+  &[type='radio']{
+    display:none;
+    & + label{
+      position: relative;
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      border: solid 1px #999999;
+      border-radius: 50%;
+      background-color: #ffffff;
+    }
+    &:checked{
+      & + label{
+        &:after{
+          content:'';
+          position: absolute;
+        	width: 8px;
+        	height: 8px;
+          left: 50%;
+          top: calc( 50% - .5px);
+          border-radius: 50%;
+          background: #000000;
+          transform: translate( -50% , -50% );
+          -webkit-transform: translate( -50% , -50% );
+        }
+      }
+    }
+  }
+
+
+
+}
+
+//button style
+.button_group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button,a{
+    margin-left: 5px;
+    &:first-child{
+      margin-left: 0px;
+    }
+  }
+}
+button,a{
+  &.gbtn{
+    padding: 8px 15px;
+    &.transparent{
+      border: 1px solid #999999;
+      background: transparent;
+      &:hover{
+        background-color: #ececec!important;
+      }
+    }
+    //common
+    &.normal{
+      padding: 11px 15px;
+      color: #ffffff;
+      font-size: $size3;
+      min-width: 110px;
+      background-color: #333333!important;
+      &.gray{
+        background-color: #818286!important;
+      }
+    }
+  }
+}
+a{
+  &.gbtn{
+    line-height: 1.3;
+  }
+}
+
+/*select box customize*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  &.tiny{ width: 100px }
+  &.small{ width: 150px }
+  &.middle{ width: 250px }
+  &.big{ width: 478px }
+  select{
+    display: none; /*hide original SELECT element:*/
+  }
+  .select-selected {
+    background-color: #ffffff;
+    &:after{
+      position: absolute;
+      content: "";
+      top: 14px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: #5d5d5d transparent transparent transparent;
+    }
+    &.select-arrow-active:after {
+      border-color: transparent transparent #5d5d5d transparent;
+      top: 7px;
+    }
+  }
+  .select-items div,.select-selected {
+    color: $text_color;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  .select-selected {
+    border-color: #cccccc;
+  }
+  .select-items div{
+    border-color: transparent #cccccc #cccccc #cccccc;
+  }
+
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+}
