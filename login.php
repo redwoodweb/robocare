@@ -6,7 +6,7 @@ include 'header.php';
     <header class="no_nav_header">
         <div class="logo">
             <?php
-             include 'components/logo.php';
+             include './components/logo.php';
             ?>
         </div>
     </header>
