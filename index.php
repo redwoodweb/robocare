@@ -1,19 +1,13 @@
 <?php
 $layout = 'common';
 include 'header.php';
-?>
-    <!-- 네비게이션 없을 경우 헤더 -->
-    <header>
-        <div class="logo">
-            <a href="./" alt="홈으로 가기"><img src="public/img/top_logo.png" alt="GST 로고 이미지"></a>
-        </div>
-    </header>
-    <!-- //.네비게이션 없을 경우 헤더 -->
+?>    
     <!-- content : 콘텐츠 영역 -->
     <div class="content">
         <!-- content_inner -->
         <div class="content_inner">
             <ul>
+                <li><a href="./login.php">로그인</a></li>
                 <li><a href="./sign_up.php">회원가입</a></li>
                 <li><a href="./user_info_view.php">사용자 정보관리 확인/수정</a></li>
                 <li><a href="./authentication.php">본인 인증 페이지</a></li>
@@ -34,5 +28,5 @@ include 'header.php';
 
 <?php
 $fLayout = 'f_relative';
-include 'footer.php';
+// include 'footer.php';
 ?>
