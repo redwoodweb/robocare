@@ -6,8 +6,8 @@ include 'header.php';
     <header class="no_nav_header">
         <div class="logo">
             <?php
-            $page = 'login';
-             include 'logo.php';
+                $page = 'login';
+                include 'logo.php';
             ?>
         </div>
     </header>
