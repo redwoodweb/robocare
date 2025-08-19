@@ -5,7 +5,7 @@ include 'header.php';
     <!-- 네비게이션 없을 경우 헤더 -->
     <header>
         <div class="logo">
-            <a href="/" alt="홈으로 가기"><img src="public/img/top_logo.png" alt="GST 로고 이미지"></a>
+            <a href="./index.php" alt="홈으로 가기"><img src="public/img/top_logo.png" alt="GST 로고 이미지"></a>
         </div>
     </header>
     <!-- //.네비게이션 없을 경우 헤더 -->

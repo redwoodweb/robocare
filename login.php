@@ -5,7 +5,9 @@ include 'header.php';
     <!-- 네비게이션 없을 경우 헤더 -->
     <header class="no_nav_header">
         <div class="logo">
-            <img src="public/img/logo.png" alt="GST 로고 이미지">
+            <?php
+             include 'components/logo.php';
+            ?>
         </div>
     </header>
     <!-- //.네비게이션 없을 경우 헤더 -->

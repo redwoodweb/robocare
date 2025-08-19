@@ -6,7 +6,7 @@ include 'header.php';
     <!-- 메인 헤더 영역 -->
     <header class="main_header">
         <div class="logo">
-            <img src="public/img/logo-white.png" alt="Robocare">
+            <a href="./index.php" alt="홈으로 가기"><img src="public/img/top_logo.png" alt="GST 로고 이미지"></a>
         </div>
         <nav class="navigation">
             <ul>
