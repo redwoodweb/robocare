@@ -1,64 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-// Font Size
-$size1: 13px;
-$size2: 14px;
-$size3: 15px;
-$size4: 16px;
-$size5: 18px;
-$size6: 21px;
-$size7: 24px;
-$size8: 25px;
-
-//font-weight
-$f_weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
-
-@each $size in $f_weight {
-  cs .f_weight_#{$size} {
-    font-weight: $size;
-  }
-}
-//line-height
-$lineh1: 1;
-$lineh1_4: 1.4;
-
-//font color
-$text_color: #666666; // table_a : td 사용
-$text_color9: #999999; // 사용자정보관리 테일블 td text 사용
-$title_color: #333333; // table_a : th 항목 text 사용, content_box > sub_txt 사용
-//주의사항 컬러
-$prec_color: #f82828;
-
-// jqGrid Font Size
-$jqFont_td: $size3;
-
-$point_color: #1a73c4;
-
-// mixin
-@mixin ab_align_L_M {
-  // 요소의 position이 absolute 일때 요소를 상하 가운데로 정렬
-  & {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-  }
-}
-
-@import '../partial/font';
-@import '../partial/base';
-@import '../partial/layout';
-@import '../partial/login';
-@import '../partial/content';
-@import '../partial/components';
-@import '../partial/content';
-// 회원가입
-@import '../partial/sign_up';
-// 사용자 정보 관리
-@import '../partial/user_info_management';
-// 본인인증
-@import '../partial/authentication';
-// 회원가입완료
-@import '../partial/compeleted_sign_up';
-// 아이디 찾기
-@import '../partial/find_id';
-// 약관동의
-@import '../partial/agreement';
+@use '../partial/index';
+// @use '../partial/font';
+// @use '../partial/base';
+// @use '../partial/layout';
+// @use '../partial/login';
+// @use '../partial/content';
+// @use '../partial/components';
+// @use '../partial/sign_up';
+// @use '../partial/user_info_management';
+// @use '../partial/authentication';
+// @use '../partial/compeleted_sign_up';
+// @use '../partial/find_id';
+// @use '../partial/agreement';

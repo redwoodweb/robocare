@@ -1,0 +1,43 @@
+// Font Size
+$size1: 13px;
+$size2: 14px;
+$size3: 15px;
+$size4: 16px;
+$size5: 18px;
+$size6: 21px;
+$size7: 24px;
+$size8: 25px;
+
+//font-weight
+$f_weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@each $size in $f_weight {
+  cs .f_weight_#{$size} {
+    font-weight: $size;
+  }
+}
+//line-height
+$lineh1: 1;
+$lineh1_4: 1.4;
+
+//font color
+$text_color: #666666; // table_a : td 사용
+$text_color9: #999999; // 사용자정보관리 테일블 td text 사용
+$title_color: #333333; // table_a : th 항목 text 사용, content_box > sub_txt 사용
+//주의사항 컬러
+$prec_color: #f82828;
+
+// jqGrid Font Size
+$jqFont_td: $size3;
+
+$point_color: #1a73c4;
+
+// mixin
+@mixin ab_align_L_M {
+  // 요소의 position이 absolute 일때 요소를 상하 가운데로 정렬
+  & {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
