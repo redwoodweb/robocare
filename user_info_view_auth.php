@@ -4,9 +4,10 @@ include 'header.php';
 ?>
     <!-- 네비게이션 없을 경우 헤더 -->
     <header>
-        <div class="logo">
-            <a href="/" alt="홈으로 가기"><img src="public/img/top_logo.png" alt="GST 로고 이미지"></a>
-        </div>
+        <?php
+            $page = '';
+            include 'logo.php';
+        ?>
     </header>
     <!-- //.네비게이션 없을 경우 헤더 -->
     <!-- content : 콘텐츠 영역 -->
@@ -19,12 +20,11 @@ include 'header.php';
                 // include 'components/sign_up.php';
                 // include 'components/user_info_view.php';
                 //include 'components/authentication.php';
-                include 'components/compeleted_sign_up.php';
-                //include 'components/find_id.php';
-                //include 'components/result_find_id.php';
-                //include 'components/agreement.php';
-                //include 'components/user_info_view_auth.php';
-                //include 'components/user_info_view_auth.php';
+                // include 'components/compeleted_sign_up.php';
+                // include 'components/find_id.php';
+                // include 'components/result_find_id.php';
+                // include 'components/agreement.php';
+                include 'components/user_info_view_auth.php';                
             ?>
         </div>
         <!-- //.content_inner -->

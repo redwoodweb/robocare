@@ -1,7 +1,11 @@
-<?php
-if ($page == 'login' ){
-    echo  <a href="./index.php" alt="홈으로 가기"><img src="public/img/logo.png" alt="GST 로고 이미지"></a>    
-}else{
-    echo  <a href="./index.php" alt="홈으로 가기"><img src="public/img/top_logo.png" alt="GST 로고 이미지"></a>
-} 
-?>
+<?php if (isset($page) && $page === 'login') : ?>
+    <!-- 로그인 페이지일 때 로고 -->
+    <a href="./index.php">
+        <img src="public/img/logo.png" alt="GST">
+    </a>
+<?php else : ?>
+    <!-- 로그인 페이지가 아닐 때 로고 -->
+    <a href="./index.php">
+        <img src="public/img/top_logo.png" alt="GST">
+    </a>
+<?php endif; ?>
