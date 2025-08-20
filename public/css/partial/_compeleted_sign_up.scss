@@ -1,33 +1,33 @@
 //회원가입완료
-.cp_sign_up{
-  .button_group{
+.cp_sign_up {
+  .button_group {
     margin-top: 40px;
   }
   //content_box style
-  .content_box{
-    .title_group{
+  .content_box {
+    .title_group {
       margin-top: 100px;
       text-align: center;
-      h1{
+      h1 {
         font-size: 30px;
         line-height: $lineh1_4;
         color: $title_color;
-        & + p{
+        & + p {
           margin-top: 10px;
         }
       }
-      p{
+      p {
         font-size: $size2;
         line-height: $lineh1_4;
         color: $text_color9;
       }
     }
-    .cb_inner{
+    .cb_inner {
       margin-top: 45px;
-      .table_a{
+      .table_a {
         width: 380px;
         margin: 0 auto 100px;
-        td{
+        td {
           color: #555555;
         }
       }

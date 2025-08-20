@@ -13,7 +13,7 @@ $size8: 25px;
 $f_weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 
 @each $size in $f_weight {
-  .f_weight_#{$size} {
+  cs .f_weight_#{$size} {
     font-weight: $size;
   }
 }
@@ -33,9 +33,6 @@ $jqFont_td: $size3;
 
 $point_color: #1a73c4;
 
-body {
-  background-color: blue;
-}
 // mixin
 @mixin ab_align_L_M {
   // 요소의 position이 absolute 일때 요소를 상하 가운데로 정렬
@@ -53,9 +50,15 @@ body {
 @import '../partial/content';
 @import '../partial/components';
 @import '../partial/content';
-@import '../partial/sign_up'; // 회원가입
-@import '../partial/user_info_management'; // 사용자 정보 관리
-@import '../partial/authentication'; // 본인인증
-@import '../partial/compeleted_sign_up'; // 회원가입완료
-@import '../partial/find_id'; // 아이디 찾기
-@import '../partial/agreement'; // 약관동의
+// 회원가입
+@import '../partial/sign_up';
+// 사용자 정보 관리
+@import '../partial/user_info_management';
+// 본인인증
+@import '../partial/authentication';
+// 회원가입완료
+@import '../partial/compeleted_sign_up';
+// 아이디 찾기
+@import '../partial/find_id';
+// 약관동의
+@import '../partial/agreement';

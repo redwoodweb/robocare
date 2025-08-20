@@ -1,49 +1,52 @@
 //아이디 찾기
-.find_id{
-  .button_group{
+.find_id {
+  .button_group {
     margin-top: 40px;
   }
   //content_box style
-  .content_box{
-    .title_group{
+  .content_box {
+    .title_group {
       margin: 150px auto 130px;
       text-align: center;
-      h1{
+      h1 {
         font-size: 30px;
         line-height: $lineh1_4;
         color: $title_color;
-        & + p{
+        & + p {
           margin-top: 10px;
         }
       }
-      p{
+      p {
         font-size: $size2;
         line-height: $lineh1_4;
         color: $text_color9;
       }
     }
-    .cb_inner{
+    .cb_inner {
       .table_a {
         table-layout: auto;
-        th,td{
-          padding: 9px 8px 8px ;
-          & *{
+        th,
+        td {
+          padding: 9px 8px 8px;
+          & * {
             float: left;
           }
-          label{
+          label {
             margin-right: 5px;
           }
-          p:nth-of-type(1){
+          p:nth-of-type(1) {
             margin-right: 40px;
           }
         }
-        tr:first-child{
-          th,td{
+        tr:first-child {
+          th,
+          td {
             padding: 16px 8px;
           }
         }
-        tr:last-child{
-          th,td{
+        tr:last-child {
+          th,
+          td {
             border-bottom: 0;
           }
         }

@@ -1,42 +1,48 @@
 // 회원가입
-.sign_up{
-  .button_group{
+.sign_up {
+  .button_group {
     margin-top: 40px;
   }
-  .table_a{
-    th,td{
-      button,a,i,.custom-select,label,.txt,input{
+  .table_a {
+    th,
+    td {
+      button,
+      a,
+      i,
+      .custom-select,
+      label,
+      .txt,
+      input {
         float: left;
         margin-left: 5px;
       }
-      label{
+      label {
         margin: 5px 0 0 5px;
       }
-      .txt{
+      .txt {
         display: inline-block;
         font-size: $size2;
         color: #999999;
         margin: 5px 0 0 5px;
       }
-      input{
-        &:first-child{
+      input {
+        &:first-child {
           margin-left: 0px;
         }
-        &[type='checkbox'] + label{
+        &[type='checkbox'] + label {
           margin-left: 12px;
         }
-        & + i{
+        & + i {
           float: left;
           margin-top: 5px;
-          & + input{
-             margin-left: 5px;
+          & + input {
+            margin-left: 5px;
           }
         }
       }
     }
-    td{
+    td {
       font-weight: 500;
     }
   }
-
 }

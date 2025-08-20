@@ -1,50 +1,52 @@
 //사용자 정보 관리
-.user_info_mg{
-  .button_group{
+.user_info_mg {
+  .button_group {
     margin-top: 40px;
   }
-  .content_box{
-    .title_group{
+  .content_box {
+    .title_group {
       margin: 130px auto 45px;
       text-align: center;
-      h1{
+      h1 {
         font-size: 20px;
         line-height: $lineh1_4;
         color: $title_color;
-        & + p{
+        & + p {
           margin-top: 10px;
         }
       }
-      p{
+      p {
         font-size: $size2;
         line-height: $lineh1_4;
         color: $text_color9;
       }
     }
-    .cb_inner{
+    .cb_inner {
       margin-bottom: 140px;
       text-align: center;
-      input{
+      input {
         width: 320px;
         margin: 0 auto;
         text-align: left;
         padding: 14px 10px;
-        &::placeholder{
+        &::placeholder {
           text-align: center;
         }
       }
     }
   }
   .table_a {
-    td,th {
+    td,
+    th {
       border: 1px solid #f6f6f6;
       border-left: 0;
       border-right: 0;
       padding: 9px 8px 8px;
     }
-    tr{
-      &:last-child{
-        td,th{
+    tr {
+      &:last-child {
+        td,
+        th {
           border: 1px solid #cccccc;
           border-left: 0;
           border-right: 0;
@@ -53,7 +55,7 @@
     }
     th {
       padding-left: 0px;
-      &:nth-child(1){
+      &:nth-child(1) {
         width: 160px;
       }
     }
@@ -61,5 +63,4 @@
       color: $text_color9;
     }
   }
-
 }

@@ -1,42 +1,53 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin:0;
-    height:100%;
-    min-width: 1260px; // snb, 테이블 포함된 페이지 1200px 이하 일때 테이블 깨짐 현상 방지
-    font-family: 'Noto Sans KR', sans-serif, NotoSans;
+html,
+body {
+  margin: 0;
+  height: 100%;
+  min-width: 1260px; // snb, 테이블 포함된 페이지 1200px 이하 일때 테이블 깨짐 현상 방지
+  font-family: 'Noto Sans KR', sans-serif, NotoSans;
+  background-color: red;
 }
 
-body, div, a, li, p {
-    color: #333333;
-    line-height:1.4em;
+body,
+div,
+a,
+li,
+p {
+  color: #333333;
+  line-height: 1.4em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #333333;
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration:none;
-    box-sizing: border-box;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 ul {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    list-style:none;
+  list-style: none;
 }
 
 img {
-    display:block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 p {
@@ -44,18 +55,19 @@ p {
   padding: 0;
 }
 
-em,i {
-   font-style: normal;
+em,
+i {
+  font-style: normal;
 }
 
 ::placeholder {
-    color: #999999;
-    font-size: $size4;
+  color: #999999;
+  font-size: $size4;
 }
 
 .btn {
-    padding: 20px;
-    font-weight: bold;
+  padding: 20px;
+  font-weight: bold;
 }
 
 button {
@@ -66,17 +78,17 @@ button {
   box-sizing: border-box;
   padding: 8px;
   color: $text_color;
-
 }
 
 select {
   color: $text_color;
 }
 
-input,button,select {
+input,
+button,
+select {
   outline: none;
 }
-
 
 input {
   padding: 9px 10px 10px;
@@ -85,7 +97,7 @@ input {
   box-sizing: border-box;
   font-size: $size2;
   font-weight: 500;
-  &::placeholder{
+  &::placeholder {
     font-size: $size2;
   }
   &:focus {
