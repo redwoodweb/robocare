@@ -10,7 +10,7 @@ include 'header.php';
             <div class="project-info">
                 <P>프로젝트 시작일 : 2020.06.25 </P>
                 <p>의뢰업체 : 제이랩</p>
-                <p>페이지 구성 : 9페이지 (각 페이지의 상단 로고를 클릭 시 첫번째 페이지로 이동)</p>
+                <p>페이지 구성 : 10페이지 (각 페이지의 상단 로고를 클릭 시 첫번째 페이지로 이동)</p>
                 <p>개발환경 :  php, html, css(sass), javascript</p>
                 <h4 class="f_weight_700">작업내용</h4>
                 <p>php 페이지별 인클루드 (변수에 따라 동적 페이지 노출 구현)</p>
