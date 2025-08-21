@@ -26,7 +26,7 @@ include 'header.php';
                     <img src="public/img/profile-default.png">
                 </div>
                 <div class="name">
-                    <strong>김정우</strong>님
+                    <strong>홍길동</strong>님
                 </div>
             </div>
         </div>
