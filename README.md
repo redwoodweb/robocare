@@ -7,6 +7,8 @@
 ### Updated
 
 - 2020.06.30 : 로그인 페이지 / 기본 콘텐츠 페이지 작업 완료
+- 2025.08.21 : live sass complier 확장 프로그램과 sass버전 업데이트 간 충돌현상 해결
+  (sass @import deprecated(지원 종료)로 @use,@forward로 수정 보완 )
 
 ---
 
