@@ -524,7 +524,7 @@ body.has-nav .content .side_navi ul li.active a {
   margin-right: 10px;
   height: 15px;
   display: inline-block;
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 .login_wrapper .btn_container .link:last-child:after {
   border: none;
