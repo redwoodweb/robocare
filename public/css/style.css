@@ -1093,6 +1093,10 @@ a.gbtn {
 .content_inner:has(.project-info) {
   flex-direction: column;
 }
+.content_inner:has(.project-info) h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
 .content_inner:has(.project-info) h4 {
   margin: 20px 0 10px;
 }
