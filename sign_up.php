@@ -20,7 +20,7 @@ include 'header.php';
                 include 'components/sign_up.php';
                 // include 'components/user_info_view.php';
                 //include 'components/authentication.php';
-                // include 'components/compeleted_sign_up.php';
+                // include 'components/completed_sign_up.php';
                 // include 'components/find_id.php';
                 // include 'components/result_find_id.php';
                 // include 'components/agreement.php';

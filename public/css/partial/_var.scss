@@ -12,7 +12,7 @@ $size8: 25px;
 $f_weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 
 @each $size in $f_weight {
-  cs .f_weight_#{$size} {
+  .f_weight_#{$size} {
     font-weight: $size;
   }
 }

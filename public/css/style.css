@@ -1,38 +1,38 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-cs .f_weight_100 {
+.f_weight_100 {
   font-weight: 100;
 }
 
-cs .f_weight_200 {
+.f_weight_200 {
   font-weight: 200;
 }
 
-cs .f_weight_300 {
+.f_weight_300 {
   font-weight: 300;
 }
 
-cs .f_weight_400 {
+.f_weight_400 {
   font-weight: 400;
 }
 
-cs .f_weight_500 {
+.f_weight_500 {
   font-weight: 500;
 }
 
-cs .f_weight_600 {
+.f_weight_600 {
   font-weight: 600;
 }
 
-cs .f_weight_700 {
+.f_weight_700 {
   font-weight: 700;
 }
 
-cs .f_weight_800 {
+.f_weight_800 {
   font-weight: 800;
 }
 
-cs .f_weight_900 {
+.f_weight_900 {
   font-weight: 900;
 }
 
@@ -1067,4 +1067,32 @@ a.gbtn {
 }
 .agree .content_box .cb_inner .cg_wrap .check_group * {
   float: left;
+}
+
+#index-nav {
+  width: 100%;
+  margin-top: 20px;
+}
+#index-nav ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+#index-nav ul li {
+  background-color: #333;
+  border-radius: 10px;
+}
+#index-nav ul li a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.content_inner:has(.project-info) {
+  flex-direction: column;
+}
+.content_inner:has(.project-info) h4 {
+  margin: 20px 0 10px;
 }
