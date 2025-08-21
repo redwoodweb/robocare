@@ -1,0 +1,25 @@
+@use 'var.scss' as *;
+//본인인증 sdfsdfsdfs
+.jqgrid {
+  .ui-jqgrid-titlebar {
+    border-bottom: 1px solid black;
+    padding-bottom: 13px;
+    .ui-jqgrid-title {
+      font-size: $size5;
+    }
+  }
+  .list {
+    // border: 1px solid red;
+    width: 100% !important;
+    border-spacing: 0;
+    td {
+      border: 0;
+      border-style: solid;
+      border-bottom-width: 1px;
+      border-right-width: 1px;
+      &:last-child {
+        border-right-width: 0;
+      }
+    }
+  }
+}

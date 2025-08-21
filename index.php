@@ -27,6 +27,7 @@ include 'header.php';
                     <li><a href="./result_find_id.php">아이디 찾기 완료</a></li>
                     <li><a href="./agreement.php">약관동의</a></li>
                     <li><a href="./user_info_view_auth.php">사용자 정보관리 인증</a></li>
+                    <li><a href="./table_view.php">사용자관리</a></li>
                 </ul>
             </nav>
             <!-- 해당 컴포넌트 : sign_up.php(회원가입),user_info_view.php(사용자 정보관리 확인/수정),authentication.php(본인인증페이지),completed_sign_up.php(회원가입완료)
